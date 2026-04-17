@@ -1,0 +1,426 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>新闻中心 - 齐博CMS整站系统</title>
+<link rel="stylesheet" type="text/css" href="http://192.168.176.156/v7/images/v7/style.css">
+<link rel="stylesheet" type="text/css" href="http://192.168.176.156/v7/images/v7/cms.css">
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<meta name="keywords" content="  新闻 时事 政治">
+<meta name="description" content="">
+</head>
+<SCRIPT LANGUAGE="JavaScript">
+//屏蔽可忽略的js脚本错误
+function killErr(){
+	return true;
+}
+window.onerror=killErr;
+</SCRIPT>
+
+<SCRIPT LANGUAGE="JavaScript" src="http://192.168.176.156/v7/images/default/inc.js"></SCRIPT>
+<SCRIPT LANGUAGE="JavaScript" src="http://192.168.176.156/v7/images/default/default.js"></SCRIPT>
+<SCRIPT LANGUAGE="JavaScript" src="http://192.168.176.156/v7/images/default/swfobject.js"></SCRIPT>
+<SCRIPT LANGUAGE="JavaScript" src="http://192.168.176.156/v7/images/default/jquery-1.2.6.min.js"></SCRIPT>
+<body ondblclick="">
+<table width="990" border="0" cellspacing="0" cellpadding="0" id="header_login">
+  <tr>
+    <td class="login">
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+document.write('<span id="head_loginer"><img alt="内容加载中,请稍候..." src="http://192.168.176.156/v7/images/default/ico_loading3.gif"></span>');
+document.write('<div style="display:none;"><iframe src="http://192.168.176.156/v7/do/hack.php?hack=login&styletype=v7&iframeID=head_loginer" width=0 height=0></iframe></div>');
+//-->
+</SCRIPT>    	
+    </td>
+    <td class="info">
+<script language="JavaScript"> 
+<!---
+today=new Date();
+var hours = today.getHours();
+var minutes = today.getMinutes();
+var seconds = today.getSeconds();
+var timeValue = ((hours >12) ? hours -12 :hours); 
+timeValue += ((minutes < 10) ? ":0" : ":") + minutes;
+timeValue += (hours >= 12) ? " 下午 " : " 上午 ";
+function initArray(){
+this.length=initArray.arguments.length
+for(var i=0;i<this.length;i++)
+this[i+1]=initArray.arguments[i]  }
+var d=new initArray("<span>星期日</span>","<em>星期一</em>","<em>星期二</em>","<em>星期三</em>","<em>星期四</em>","<em>星期五</em>","<em>星期六</em>"); 
+document.write(today.getFullYear(),"年",today.getMonth()+1,"月",today.getDate(),"日 ",d[today.getDay()+1]," ",timeValue); 
+//-->
+</script>
+		<A onclick="this.style.behavior='url(#default#homepage)';this.setHomePage('http://192.168.176.156/v7');" href="#">设为首页</A>
+        <A href="javascript:javascript:window.external.AddFavorite('http://192.168.176.156/v7','齐博CMS整站系统');">加入收藏</A>
+    </td>
+  </tr>
+</table>
+<table width="990" border="0" cellspacing="0" cellpadding="0" id="header_logo">
+  <tr>
+    <td>
+    	<a href="http://192.168.176.156/v7"><img src="http://192.168.176.156/v7/images/v7/logo.gif"/></a>
+    </td>
+  </tr>
+</table>
+<div id="Mainmenu">
+
+	<dl onmouseover="SubOn(this)" onmouseout="SubOut(this)" class=over>
+        <dt><a href="http://192.168.176.156/v7/"  >首页</a></dt>
+
+    </dl>
+
+	<dl onmouseover="SubOn(this)" onmouseout="SubOut(this)" >
+        <dt><a href="http://192.168.176.156/v7/html/1/"  >新闻</a></dt>
+
+    </dl>
+
+	<dl onmouseover="SubOn(this)" onmouseout="SubOut(this)" >
+        <dt><a href="http://192.168.176.156/v7/html/9/"  >图片</a></dt>
+
+    </dl>
+
+	<dl onmouseover="SubOn(this)" onmouseout="SubOut(this)" >
+        <dt><a href="http://192.168.176.156/v7/html/11/"  >下载</a></dt>
+
+    </dl>
+
+	<dl onmouseover="SubOn(this)" onmouseout="SubOut(this)" >
+        <dt><a href="http://192.168.176.156/v7/html/13/"  >影视</a></dt>
+
+    </dl>
+
+	<dl onmouseover="SubOn(this)" onmouseout="SubOut(this)" >
+        <dt><a href="http://192.168.176.156/v7/html/15/"  >商城</a></dt>
+
+    </dl>
+
+    <div class="post"><span><a href="http://192.168.176.156/v7/do/post.php" target="_blank">我要投稿</a></span></div>
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+var obj=document.getElementById("Mainmenu").getElementsByTagName("dl");
+function SubOn(theDl){		
+	for(var i=0;i< obj.length;i++ ){
+		obj[i].className='';
+	}
+	theDl.className='choose';
+	return ;;
+	document.getElementById("searchselect").style.display='none';
+}
+function SubOut(theDl){
+	for(var i=0;i< obj.length;i++ ){
+		obj[i].className='';
+	}
+	theDl.className='over';
+	document.getElementById("searchselect").style.display='';
+}
+//-->
+</SCRIPT>
+</div>
+<table width="990" border="0" cellspacing="0" cellpadding="0" id="header_search">
+  <tr>
+    <td><form name="form1" method="post" action="http://192.168.176.156/v7/do/search.php" onsubmit="return cksearch();">
+     
+        <div class="search">
+        	<span class="input">
+            <select name="mid" id="searchselect">
+        	  <option value="">全站搜索</option>
+			  <option value="0">文章</option>
+
+ <option value="100">图片</option>
+
+ <option value="101">软件</option>
+
+ <option value="102">视频</option>
+
+ <option value="103">商品</option>
+
+ <option value="104">FLASH</option>
+
+ <option value="105">产品</option>
+
+        	</select>
+            </span>
+            <span class="input"><input id="keyword_s" type="text" name="keyword"></span>
+            <span class="sub"><input type="submit" name="Submit" value="搜一下">
+          </span> <span class="word"><a href="http://192.168.176.156/v7/do/search.php" target="_blank">高级搜索</a></span>	
+        </div>
+      </form><script type="text/javascript">
+<!--
+function cksearch(){
+	if (document.getElementById("keyword_s").value=='')
+	{
+		alert('关键字不能为空!');
+		return false;
+	}
+}
+//-->
+</script>
+      <div class="moresearch"> 热门搜索: <a href="http://192.168.176.156/v7/do/search.php?keyword=齐博CMS" class="b">齐博CMS</a> 
+        <a href="http://192.168.176.156/v7/do/search.php?keyword=注册域名" target="_blank">注册域名</a> 
+        <a href="http://192.168.176.156/v7/do/search.php?keyword=CEO" target="_blank">CEO</a> 
+        <a href="http://192.168.176.156/v7/do/search.php?keyword=源码下载" target="_blank">源码下载</a> 
+        <a href="http://192.168.176.156/v7/do/search.php?keyword=IT资讯" target="_blank">IT资讯</a> 
+        <a href="http://192.168.176.156/v7/do/search.php?keyword=主机空间" target="_blank">主机空间</a> 
+        <a href="http://192.168.176.156/v7/do/search.php?keyword=建站手册" class="b" target="_blank">建站手册</a> 
+        <a href="http://192.168.176.156/v7/do/search.php?keyword=论坛程序" target="_blank">论坛程序</a> 
+        <a href="http://192.168.176.156/v7/do/search.php?keyword=健康咨询" class="b" target="_blank">健康咨询</a> 
+      </div>
+    </td>
+  </tr>
+</table>
+
+<table width="100%" border="0" cellspacing="0" cellpadding="0" id="nav_guide">
+  <tr> 
+    <td><div class="t1">当前位置：</div><div class="t2"><a href="http://192.168.176.156/v7/">首页</a>  -&gt; <a  href='http://192.168.176.156/v7/html/1/' class='guide_menu'>新闻中心</a> </div></td>
+  </tr>
+</table>
+
+<SCRIPT LANGUAGE="JavaScript">
+<!--//目的是为了做风格方便
+document.write('<div class="wrap">');
+//-->
+</SCRIPT>
+<!--
+--> 
+<link rel="stylesheet" type="text/css" href="http://192.168.176.156/v7/images/v7/news/index.css">
+<table width="100%" border="0" cellspacing="0" cellpadding="0" align="center" class="MainContainer">
+  <tr> 
+    <td class="SideL">
+    	<div class="mainnews">
+        	<div class="list1">
+            	
+          <div class="title"><a href="http://192.168.176.156/v7/html/31/668.htm" target="_blank">fdsa223333</a></div>
+                
+          <div class="content">fsdfasd...<a href="http://192.168.176.156/v7/html/31/668.htm" target="_blank">[详细]</a> 
+          </div>
+            </div><div class="list2">
+            	
+          <div class="title"><a href="http://192.168.176.156/v7/html/31/667.htm" target="_blank">fdsa2</a></div>
+                
+          <div class="content">fsdfasd...<a href="http://192.168.176.156/v7/html/31/667.htm" target="_blank">[详细]</a> 
+          </div>
+            </div><div class="list3">
+            	
+          <div class="title"><a href="http://192.168.176.156/v7/html/31/666.htm" target="_blank">fdsa</a></div>
+                
+          <div class="content">fsdfasd...<a href="http://192.168.176.156/v7/html/31/666.htm" target="_blank">[详细]</a> 
+          </div>
+            </div>
+         </div>
+    </td>
+    <td class="SideC"><div class="slidecont">
+
+<script type='text/javascript'>
+var widths=310;
+var heights=260;
+var counts=2;
+
+				img1=new Image ();img1.src='http://192.168.176.156/v7/upload_files/label/1_20101108161159_zs6we.jpg';
+				url1=new Image ();url1.src='#';
+				
+				img2=new Image ();img2.src='http://192.168.176.156/v7/upload_files/label/1_20101108171103_f9fvv.jpg';
+				url2=new Image ();url2.src='#';
+				
+var nn=1;
+var key=0;
+function change_img()
+{if(key==0){key=1;}
+else if(document.all)
+{document.getElementById("pic").filters[0].Apply();document.getElementById("pic").filters[0].Play(duration=2);}
+eval('document.getElementById("pic").src=img'+nn+'.src');
+eval('document.getElementById("url").href=url'+nn+'.src');
+eval('document.getElementById("url").target="blank"');
+for (var i=1;i<=counts;i++){document.getElementById("xxjdjj"+i).className='axx';}
+document.getElementById("xxjdjj"+nn).className='bxx';
+nn++;if(nn>counts){nn=1;}
+tt=setTimeout('change_img()',4000);}
+function changeimg(n){nn=n;window.clearInterval(tt);change_img();}
+document.write('<style>');
+document.write('.axx{padding:1px 7px;border-left:#cccccc 1px solid;}');
+document.write('a.axx:link,a.axx:visited{text-decoration:none;color:#fff;line-height:12px;font:9px sans-serif;background-color:#666;}');
+document.write('a.axx:active,a.axx:hover{text-decoration:none;color:#fff;line-height:12px;font:9px sans-serif;background-color:#999;}');
+document.write('.bxx{padding:1px 7px;border-left:#cccccc 1px solid;}');
+document.write('a.bxx:link,a.bxx:visited{text-decoration:none;color:#fff;line-height:12px;font:9px sans-serif;background-color:#D34600;}');
+document.write('a.bxx:active,a.bxx:hover{text-decoration:none;color:#fff;line-height:12px;font:9px sans-serif;background-color:#D34600;}');
+document.write('</style>');
+document.write('<div style="width:'+widths+'px;height:'+heights+'px;overflow:hidden;text-overflow:clip;">');
+document.write('<div><a id="url"><img id="pic" style="border:0px;filter:progid:dximagetransform.microsoft.wipe(gradientsize=1.0,wipestyle=4, motion=forward)" width='+widths+' height='+heights+' /></a></div>');
+document.write('<div style="filter:alpha(style=1,opacity=10,finishOpacity=80);background: #888888;width:100%-2px;text-align:right;top:-12px;position:relative;margin:1px;height:12px;padding:0px;margin:0px;border:0px;">');
+for(var i=1;i<counts+1;i++){document.write('<a href="javascript:changeimg('+i+');" id="xxjdjj'+i+'" class="axx" target="_self">'+i+'</a>');}
+document.write('</div></div>');
+change_img();
+</script>
+	
+	</div></td>
+    <td class="SideR">
+    	<table width="100%" border="0" cellspacing="0" cellpadding="0" class="TopList">
+          <tr>
+            <td class="head"><span class="F14 FB">点击排行</span></td>
+          </tr>
+          <tr>
+            <td class="cont">
+            	
+            <div class="list"><em>1</em><a href="http://192.168.176.156/v7/html/31/668.htm" target="_blank">fdsa223333</a><span><a>0次</a></span></div><div class="list"><em>2</em><a href="http://192.168.176.156/v7/html/31/667.htm" target="_blank">fdsa2</a><span><a>0次</a></span></div><div class="list"><em>3</em><a href="http://192.168.176.156/v7/html/31/666.htm" target="_blank">fdsa</a><span><a>0次</a></span></div><div class="list"><em>4</em><a href="http://192.168.176.156/v7/html/3/663.htm" target="_blank">&#39;</a><span><a>7次</a></span></div><div class="list"><em>5</em><a href="http://192.168.176.156/v7/html/3/664.htm" target="_blank">官方更名为“齐博CMS”，请大家注</a><span><a>2次</a></span></div><div class="list"><em>6</em><a href="http://192.168.176.156/v7/html/39/604.htm" target="_blank">V7欢迎大家拍砖，忠言虽逆耳，但</a><span><a>21次</a></span></div><div class="list"><em>7</em><a href="http://192.168.176.156/v7/html/39/603.htm" target="_blank">齐博V7版文章静态功能,已取得飞跃</a><span><a>4次</a></span></div><div class="list"><em>8</em><a href="http://192.168.176.156/v7/html/3/599.htm" target="_blank">齐博风格舞台，有梦想你就来齐博C</a><span><a>31次</a></span></div>
+                 
+            </td>
+          </tr>
+        </table>
+    </td>
+  </tr>
+</table> 
+<table width="100%" border="0" cellspacing="0" cellpadding="0" align="center" class="MainContainer">
+  <tr> 
+    <td class="SideL">
+    	<table width="100%" border="0" cellspacing="0" cellpadding="0" class="sidecontainera">
+          <tr>
+            <td class="head"><span class="FL F14 FB">社会聚焦</span><span class="FR"><a href="#">更多...</a></span></td>
+          </tr>
+          <tr>
+            <td class="cont">
+            	
+            <div class="list l1"><a href="http://192.168.176.156/v7/html/31/668.htm" target="_blank">fdsa223333</a><span><a>08-26</a></span></div><div class="list l2"><a href="http://192.168.176.156/v7/html/31/667.htm" target="_blank">fdsa2</a><span><a>08-26</a></span></div><div class="list l3"><a href="http://192.168.176.156/v7/html/31/666.htm" target="_blank">fdsa</a><span><a>08-26</a></span></div><div class="list l4"><a href="http://192.168.176.156/v7/html/3/663.htm" target="_blank">&#39;</a><span><a>11-12</a></span></div><div class="list l5"><a href="http://192.168.176.156/v7/html/3/664.htm" target="_blank">官方更名为“齐博CMS”，请大家注意</a><span><a>12-09</a></span></div>
+                     	
+            </td>
+          </tr>
+        </table>
+    </td>
+    <td class="MainR">
+    	<table width="100%" border="0" cellspacing="0" cellpadding="0" class="sidecontainerb">
+          <tr>
+            <td class="head"><span class="FL F14 FB">图片主题</span><span class="FR"> <a href="#">更多...</a> </span></td>
+          </tr>
+          <tr>
+            <td class="cont">
+            	
+            <div class="listpic">
+			 <a href="http://192.168.176.156/v7/html/3/593.htm" class="pic" target="_blank"><img src="http://i3.sinaimg.cn/home/deco/2009/0330/con_logo_tech_news.gif" onerror="this.src='http://192.168.176.156/v7/images/default/nopic.jpg'" width="120" height="90" /></a> 
+              <a href="http://192.168.176.156/v7/html/3/593.htm" class="title" target="_blank">更名为齐博CMS,深受</a> 
+            </div><div class="listpic">
+			 <a href="http://192.168.176.156/v7/html/4/583.htm" class="pic" target="_blank"><img src="http://down.qibosoft.com/other/testv6/upload_files/article/4/1_20090419160422_PjOh8_jpg.gif" onerror="this.src='http://192.168.176.156/v7/images/default/nopic.jpg'" width="120" height="90" /></a> 
+              <a href="http://192.168.176.156/v7/html/4/583.htm" class="title" target="_blank">产品经理的前世今生</a> 
+            </div><div class="listpic">
+			 <a href="http://192.168.176.156/v7/html/39/578.htm" class="pic" target="_blank"><img src="http://down.qibosoft.com/other/testv6/upload_files/article/39/1_20090419150430_a2XoC.jpg" onerror="this.src='http://192.168.176.156/v7/images/default/nopic.jpg'" width="120" height="90" /></a> 
+              <a href="http://192.168.176.156/v7/html/39/578.htm" class="title" target="_blank">戴志康：和我一样创</a> 
+            </div><div class="listpic">
+			 <a href="http://192.168.176.156/v7/html/34/560.htm" class="pic" target="_blank"><img src="http://down.qibosoft.com/other/testv6/upload_files/article/34/1_20090420110424_5lRC8.jpg" onerror="this.src='http://192.168.176.156/v7/images/default/nopic.jpg'" width="120" height="90" /></a> 
+              <a href="http://192.168.176.156/v7/html/34/560.htm" class="title" target="_blank">chinaz主机网商品快</a> 
+            </div>
+                
+            </td>
+          </tr>
+        </table>
+    </td>
+  </tr>
+</table> 
+<table width="100%" border="0" cellspacing="0" cellpadding="0" align="center" class="MainContainer">
+  <tr> 
+    <td class="SideL">
+    	<table width="100%" border="0" cellspacing="0" cellpadding="0" class="sidecontainera">
+          <tr>
+            <td class="head"><span class="FL F14 FB">民生话题 </span><span class="FR"> <a href="#">更多...</a> </span></td>
+          </tr>
+          <tr>
+            <td class="cont"> <div class="list l1"><a href="http://192.168.176.156/v7/html/31/545.htm" target="_blank">V7将保留V6原来的所有功能</a><span><a>04-18</a></span></div><div class="list l2"><a href="http://192.168.176.156/v7/html/32/546.htm" target="_blank">qibosoft与Phpwind强势整合 打造黄金组合</a><span><a>04-18</a></span></div><div class="list l3"><a href="http://192.168.176.156/v7/html/32/547.htm" target="_blank">v7考试系统进一步加强,已实现前台查看考试结</a><span><a>04-18</a></span></div><div class="list l4"><a href="http://192.168.176.156/v7/html/32/548.htm" target="_blank">v7考试系统已支持随机出题与考试时间限制功能</a><span><a>04-18</a></span></div><div class="list l5"><a href="http://192.168.176.156/v7/html/32/549.htm" target="_blank">透露一下V7的进展,已增强会员积分消费与赚取</a><span><a>04-18</a></span></div><div class="list l6"><a href="http://192.168.176.156/v7/html/32/550.htm" target="_blank">chinaz倾力打造IDC交易平台主机网正式上线</a><span><a>04-18</a></span></div>         	
+            </td>
+          </tr>
+        </table>
+        <table width="100%" border="0" cellspacing="0" cellpadding="0" class="sidecontainera mt10">
+          <tr>
+            <td class="head"><span class="FL F14 FB">网友推荐</span><span class="FR"><a href="#">更多...</a></span></td>
+          </tr>
+          <tr>
+            <td class="cont"><div class="list l1"><a href="http://192.168.176.156/v7/html/31/668.htm" target="_blank">fdsa223333</a><span><a>08-26</a></span></div><div class="list l2"><a href="http://192.168.176.156/v7/html/31/667.htm" target="_blank">fdsa2</a><span><a>08-26</a></span></div><div class="list l3"><a href="http://192.168.176.156/v7/html/31/666.htm" target="_blank">fdsa</a><span><a>08-26</a></span></div><div class="list l4"><a href="http://192.168.176.156/v7/html/3/663.htm" target="_blank">&#39;</a><span><a>11-12</a></span></div><div class="list l5"><a href="http://192.168.176.156/v7/html/3/664.htm" target="_blank">官方更名为“齐博CMS”，请大家注意</a><span><a>12-09</a></span></div><div class="list l6"><a href="http://192.168.176.156/v7/html/39/604.htm" target="_blank">V7欢迎大家拍砖，忠言虽逆耳，但利于行，良</a><span><a>04-20</a></span></div>            	
+            </td>
+          </tr>
+        </table>
+    </td>
+    <td class="SideCa">
+    	<table width="100%" border="0" cellspacing="0" cellpadding="0" class="sidecontainerb">
+          <tr>
+            <td class="head"><span class="FL F14 FB">今日推荐</span><span class="FR"><a href="#">更多...</a></span></td>
+          </tr>
+          <tr>
+            <td class="cont">
+            	<table width="100%" border="0" cellspacing="0" align="center" cellpadding="0" class="listtable">
+                  <tr>
+                    
+                <td class="pic"><a href="http://192.168.176.156/v7/html/32/550.htm" target="_blank"><img src="http://down.qibosoft.com/other/testv6/upload_files/article/32/1_20090418180444_f8mDG_jpg.gif" onerror="this.src='http://192.168.176.156/v7/images/default/nopic.jpg'" width="70" height="70" /></a></td>
+                    <td class="word">
+                    	<a href="http://192.168.176.156/v7/html/32/550.htm" class="title">chinaz倾力打造IDC交</a>
+                        2009年3月23日，中国站长站旗下专业IDC交易平台，主机网..
+                    </td>
+                  </tr>
+                </table>	<table width="100%" border="0" cellspacing="0" align="center" cellpadding="0" class="listtable">
+                  <tr>
+                    
+                <td class="pic"><a href="http://192.168.176.156/v7/html/33/552.htm" target="_blank"><img src="http://down.qibosoft.com/other/testv6/upload_files/article/33/1_20090418180438_vPiyT.jpg" onerror="this.src='http://192.168.176.156/v7/images/default/nopic.jpg'" width="70" height="70" /></a></td>
+                    <td class="word">
+                    	<a href="http://192.168.176.156/v7/html/33/552.htm" class="title">李开复：谷歌中国市</a>
+                        4月18日消息，谷歌大中华区总裁李开复希望谷歌在中国市场..
+                    </td>
+                  </tr>
+                </table>	<table width="100%" border="0" cellspacing="0" align="center" cellpadding="0" class="listtable">
+                  <tr>
+                    
+                <td class="pic"><a href="http://192.168.176.156/v7/html/33/553.htm" target="_blank"><img src="http://down.qibosoft.com/other/testv6/upload_files/article/33/1_20090418190453_qabKt.jpg" onerror="this.src='http://192.168.176.156/v7/images/default/nopic.jpg'" width="70" height="70" /></a></td>
+                    <td class="word">
+                    	<a href="http://192.168.176.156/v7/html/33/553.htm" class="title">央视：PHPWIND南京站</a>
+                        央视网消息：随着信息产业在中国飞速发展，一些互联网企..
+                    </td>
+                  </tr>
+                </table>	<table width="100%" border="0" cellspacing="0" align="center" cellpadding="0" class="listtable">
+                  <tr>
+                    
+                <td class="pic"><a href="http://192.168.176.156/v7/html/33/554.htm" target="_blank"><img src="http://down.qibosoft.com/other/testv6/upload_files/article/33/1_20090418200432_5ZUc2.jpg" onerror="this.src='http://192.168.176.156/v7/images/default/nopic.jpg'" width="70" height="70" /></a></td>
+                    <td class="word">
+                    	<a href="http://192.168.176.156/v7/html/33/554.htm" class="title">百度百科：admin5图王</a>
+                        章征军，网络人称图王，网络界最仗义的个人网站站长，甚..
+                    </td>
+                  </tr>
+                </table>
+                 
+            </td>
+          </tr>
+        </table>
+    </td>
+    <td class="SideRa">
+    	<table width="100%" border="0" cellspacing="0" cellpadding="0" class="sidecontainerb">
+          <tr>
+            <td class="head"><span class="FL F14 FB">推荐阅读</span><span class="FR"><a href="#">更多...</a></span></td>
+          </tr>
+          <tr>
+            <td class="cont cont1"><div class="list_t_c"> <a href="http://192.168.176.156/v7/html/31/668.htm" class="title" target="_blank">fdsa223333</a> 
+              fsdfasd </div><div class="list_t_c"> <a href="http://192.168.176.156/v7/html/31/667.htm" class="title" target="_blank">fdsa2</a> 
+              fsdfasd </div><div class="list_t_c"> <a href="http://192.168.176.156/v7/html/31/666.htm" class="title" target="_blank">fdsa</a> 
+              fsdfasd </div><div class="list_t_c"> <a href="http://192.168.176.156/v7/html/3/663.htm" class="title" target="_blank">&#39;</a> 
+              中电云集（www.chinaccnet.com）是一家拥有中华人民共和国增值电信业务经营许可证，获准经营因特网数据中心业务（IDC）、因特.. </div>
+            	
+            
+                 
+            </td>
+          </tr>
+        </table>
+    </td>
+  </tr>
+</table>
+
+<!--
+-->
+<SCRIPT LANGUAGE="JavaScript">
+<!--//目的是为了做风格方便
+document.write('</div>');
+//-->
+</SCRIPT>
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+clickEdit.init();
+//-->
+</SCRIPT>
+<div id="copyright">
+    Copyright@http://192.168.176.156/v7 all rights reserved <a href="http://www.miibeian.gov.cn" target="_blank">京ICP备050453号</a><br>
+    Powered by <a href="http://www.qibosoft.com" target="_blank">qibosoft V7.0</a> 
+    Code &copy; 2003-11 <a href="http://bbs.qibosoft.com/" target="_blank">qibosoft</a> <br>
+    
+</div>
+</body>
+</html>

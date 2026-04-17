@@ -1,0 +1,25 @@
+Foremost version 1.5.7 by Jesse Kornblum, Kris Kendall, and Nick Mikus
+Audit File
+
+Foremost started at Mon Apr 13 23:18:37 2026
+Invocation: foremost alpha10.data 
+Output directory: /home/kali/Desktop/CTF/output
+Configuration file: /etc/foremost.conf
+------------------------------------------------------------------
+File: alpha10.data
+Start: Mon Apr 13 23:18:37 2026
+Length: 2 MB (2752730 bytes)
+ 
+Num	 Name (bs=512)	       Size	 File Offset	 Comment 
+
+0:	00001404.jpg 	      66 KB 	     718848 	 
+1:	00001537.png 	     623 KB 	     786984 	  (1080 x 608)
+Finish: Mon Apr 13 23:18:37 2026
+
+2 FILES EXTRACTED
+	
+jpg:= 1
+png:= 1
+------------------------------------------------------------------
+
+Foremost finished at Mon Apr 13 23:18:37 2026
