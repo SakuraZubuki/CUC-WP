@@ -42,27 +42,38 @@ print(Counter(prefixes).most_common(20))
 
 发现绝大多数前缀都是 `FAKeFlag` / `faKEFLAg` / `FakefLaG` 等大小写变体，共 258 种不同的假前缀。
 
-### Step 2：找出异常前缀
+### Step 2：词频统计提取真 flag
 
-在所有前缀中搜索唯一不同的那个：
+对所有假 flag 的 `{}` 内内容做字符频率统计（不区分大小写）：
 
-```bash
-$ grep -o '[A-Za-z]*{[^}]*}' 附件.txt | sort | uniq -c | sort -rn | tail
+```python
+import re
+from collections import Counter
+
+with open('附件.txt', 'r') as f:
+    content = f.read()
+
+flags = re.findall(r'\{([^}]+)\}', content)
+c = ''.join(flags)
+
+f = Counter(c.lower())
+for char, count in f.most_common():
+    if count > 1:  # 舍弃仅出现 1 次的字符（空格、换行等噪声）
+        print(char, end='')
 ```
 
-或者直接搜索非 `Fake/FAKE/fake` 前缀：
+输出：
 
-```bash
-$ grep -o 'nSSFLag{[^}]*}' 附件.txt
-nSSFLag{Ol3IofFGifYIldbu}
+```
+yourflagis81e57d2bc90364
 ```
 
-唯一的异常前缀是 **`nSSFLag`**（只出现 1 次），其余 7968 个都是 `FAKeFlag` / `fakeflag` 等变体。
+去掉干扰前缀 `yourflagis`，得到真 flag：`81e57d2bc90364`
 
 ## Flag
 
 ```
-NSSCTF{Ol3IofFGifYIldbu}
+NSSCTF{81e57d2bc90364}
 ```
 
 ## 总结
